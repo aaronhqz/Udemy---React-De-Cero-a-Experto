@@ -1,0 +1,14 @@
+.buttonError {
+	color: red;
+	font-size: 20px;
+	border: 0;
+}
+
+.buttonError:hover {
+	background: black;
+}
+
+.buttonSuccess {
+	color: green;
+	font-size: 20px;
+}

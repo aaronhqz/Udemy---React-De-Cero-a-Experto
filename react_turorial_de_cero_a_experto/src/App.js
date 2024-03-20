@@ -1,21 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Formulario from './components/Formulario/Formulario';
 import Saludar from './components/Saludar/Saludar';
+import LayoutBasic from './components/LayoutBasic';
 
 function App() {
-	const enviarSaludo = (nombre) => {
-		console.log(`Hola ${nombre}`);
+	const data = {
+		nombre: 'Aarcadio',
+		apellidos: 'Twitch.tv',
+		edad: 30,
+		ciudad: 'Heredia',
 	};
 
 	return (
 		<div className='App'>
-			<header className='App-header'>
-				<img src={logo} className='App-logo' alt='logo' />
-				<h1>Mi primer component</h1>
-				<h2 className='nombre'>Clases de Udemy</h2>
-				<Saludar nombre='Aaron' apellidos='Henríquez' />
-			</header>
+			{/* <img src={logo} className='App-logo' alt='logo' /> */}
+			{/* <h1>Formulario</h1> */}
+			<LayoutBasic>
+				<h1>Nuestra App Web</h1>
+				<Saludar data={data} />
+			</LayoutBasic>
 		</div>
 	);
 }
